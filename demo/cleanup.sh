@@ -7,8 +7,8 @@ read
 
 
 printf "\n1. Drop Database Sample Table\n\n"
-printf "$ sqlcmd -U SA -P RedHat123!  -i Query_DB.sql\n"
-sqlcmd -U SA -P RedHat123!  -i Drop_DB.sql
+printf "$ sqlcmd -U SA -P password -i Query_DB.sql\n"
+sqlcmd -U SA -P password  -i Drop_DB.sql
 
 printf "\n2. Remove SQL Server 2017\n\n"
 printf "$ sudo yum erase -y mssql-server\n"
