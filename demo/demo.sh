@@ -21,7 +21,7 @@ clear
 printf "\nConnect locally to the SQL Server instance to verify database access\n\n"
 printf "$ sqlcmd -S localhost -U SA -P yourStrong@Password"
 read
-sqlcmd -S localhost -U SA -P RedHat123!
+sqlcmd -S localhost -U SA -P password
 
 read
 clear
@@ -37,9 +37,9 @@ read
 more Load_DB.sql
 printf "\n"
 
-printf "$ sqlcmd -U SA -P yourStrong@Password -i Load_DB.sql"
+printf "$ sqlcmd -U SA -P password -i Load_DB.sql"
 read
-sqlcmd -U SA -P RedHat123! -i Load_DB.sql
+sqlcmd -U SA -P password -i Load_DB.sql
 
 printf "\n"
 printf "*** Creation of Sample Database Completed ***\n"
@@ -51,7 +51,7 @@ printf "$ more Query_DB.sql"
 read
 more Query_DB.sql
 printf "\n"
-printf "$ sqlcmd -U SA -P yourStrong@Password -i Query_DB.sql"
+printf "$ sqlcmd -U SA -P password -i Query_DB.sql"
 read
 sqlcmd -U SA -P RedHat123! -i Query_DB.sql
 
